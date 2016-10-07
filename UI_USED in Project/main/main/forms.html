@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->	
+<title>Light UI Pack</title>
+<link rel="stylesheet" href="css/default.css">
+<link rel="stylesheet" href="css/forms.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<header id="main">
+			<h1>Light UI Pack<span>Form Elements</span></h1>
+		</header>
+		<div class="col_300">
+			<form method="post" id="loginform" action="#" class="form_common">
+				<header class="form_header">
+					<h3>Member Login</h3>
+					<span>Login with your Registered Account</span>
+				</header>
+				<div class="input_panel">
+					<input type="text" placeholder="Username" required id="username">
+					<input type="password" placeholder="Password" required id="password">
+					<p><a href="#">Forget your Password?</a></p>
+					<div class="action_btn">
+						<input type="submit" value="Login" class="form_btn">
+					</div>
+				</div>
+				<footer class="form_footer">
+					<p>New user?<a href="#">Sign up!</a></p>
+				</footer>
+			</form> 
+		</div>	<!--End Login Form-->
+		
+		<div class="col_300">
+			<form method="post" id="contactform" action="#" class="form_common">
+				<header class="form_header">
+					<h3>Contact Form</h3>
+					<span>Feel Free To Contact Us</span>
+				</header>
+				<div class="input_panel input_panel_contact">
+					<input type="text" placeholder="Name*" required>
+					<input type="email" placeholder="abc@example.com*" required>
+					<input type="text" placeholder="Website(optional)" required>
+					<input type="text" placeholder="Phone*" required pattern="[-0-9]+">
+					<textarea cols="32" rows="7" placeholder="Type your message here*" class="message_box"></textarea>
+					<div class="action_btn">
+						<input type="submit" value="Submit Form" class="form_btn contact_btn_width">
+					</div>
+				</div>
+				<footer class="form_footer">
+					<p><em>*</em> Indicates that these are important</p>
+				</footer>
+			</form>
+		</div> 	<!--End Contact Form-->
+	
+		<div class="col_300">
+			<form method="post" id="searchbox" action="#" class="form_common">
+				<input type="text" placeholder="Type and Search" id="search_input">
+				<input type="submit" value="Go" class="search_btn">
+			</form>
+		</div> 	<!--End Search Box-->
+
+				<!--For IE only, must be at bottom for work-->
+				<script>
+$('input[placeholder], textarea[placeholder]').placeholder();
+</script>			
+
+	</div>
+</body>
+</html>

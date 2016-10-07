@@ -1,0 +1,220 @@
+
+/***********Form Common*****************/
+.form_common {
+margin: 20px;
+border-radius: 2px;
+float: left;
+overflow: hidden;	
+border: 1px solid rgb(225, 227, 225);
+border-bottom: none;
+box-shadow:
+        0 1px 1px rgba(30,30,30,.18), 
+        0 4px 0 -2px #eee, 
+		0 6px 3px -4px rgba(20, 20, 20, .7),
+		0 8px 2px -8px rgba(20, 20, 20, .5),
+		0 10px 3px -12px rgba(15, 15, 15, .6);
+background: rgba(251, 252, 250, .87);
+ background: -webkit-linear-gradient(top, rgba(255,255,255,0.93) 0%,rgba(255,255,255,0.93) 1%,rgba(249,249,249,0.94) 47%,rgba(248,248,249,0.96) 100%),
+-webkit-repeating-linear-gradient(135deg, rgba(240, 245, 240, .2) 0, transparent 1%, transparent 1%);
+background: -moz-linear-gradient(top, rgba(255,255,255,0.93) 0%,rgba(255,255,255,0.93) 1%,rgba(249,249,249,0.94) 47%,rgba(248,248,249,0.96) 100%),
+-moz-repeating-linear-gradient(135deg, rgba(240, 245, 240, .3) 0, transparent 1%, transparent 2%);
+background: -o-linear-gradient(top, rgba(255,255,255,0.93) 0%,rgba(255,255,255,0.93) 1%,rgba(249,249,249,0.94) 47%,rgba(248,248,249,0.96) 100%),
+-o-repeating-linear-gradient(135deg, rgba(240, 245, 240, .2) 0, transparent 1%, transparent 1%);
+background: -ms-linear-gradient(top, rgba(255,255,255,0.93) 0%,rgba(255,255,255,0.93) 1%,rgba(249,249,249,0.94) 47%,rgba(248,248,249,0.96) 100%),
+-ms-repeating-linear-gradient(135deg, rgba(240, 245, 240, .2) 0, transparent 1%, transparent 1%);
+}
+.form_header h3 {
+font: 500 21px/1.45 ColaborateRegular, calibri, tahoma, sans-serif;
+padding: 10px;
+text-align: center;
+color: rgb(50, 40, 50);
+text-indent: -2px;
+text-shadow: 0 1px -1px -4px rgba(230, 230, 235, .2);
+margin-top: -20px;
+background: rgba(245, 245, 246, .2);
+}
+.form_header span {
+font:12px/1.5 helvetica, arial;
+display:block;
+padding-left: 15px;
+text-align: center;
+text-indent: -18px;
+color: rgb(253, 255, 250);
+background: rgb(120, 95, 89);
+background: -webkit-linear-gradient(top, rgba(125,98,89, 1) 0%,rgba(80,55,60, .9) 100%);
+background: -moz-linear-gradient(top, rgba(125,98,89, 1) 0%,rgba(80,55,60, .9) 100%);
+background: -o-linear-gradient(top, rgba(125,98,89, 1) 0%,rgba(80,55,60, .9) 100%);
+background: -ms-linear-gradient(top, rgba(125,98,89, 1) 0%,rgba(80,55,60, .9) 100%);
+}
+/**==========================================**/
+  /**********************LOGIN FORM*********************/
+/**===========================================**/
+#loginform{
+width: 300px;
+padding: 20px 0;
+float: left;
+}
+.input_panel {
+margin: 12px 12px 0 15px;
+}
+/**Text area styling class here**/
+.input_panel input, .message_box {
+float: left;
+padding: 6px 12px 6px 25px;
+width: 215px;
+margin: 8px 0 6px 5px;
+border: 1px solid rgba(20, 20, 20, .14);
+border-radius: 3px;
+background: rgba(252, 255, 252, .86);
+box-shadow: 0 0 0 2px rgba(170, 170, 170, .16);
+color: rgb(25, 33, 30);
+font-size: 13px;
+font-family:calibri, tahoma, sans-serif;
+}
+.input_panel input:focus, .message_box:focus{
+outline:none;
+box-shadow: 0 0 0 2px rgba(120, 120, 120, .3);
+}
+/**End**/
+
+.input_panel #username{
+background:rgba(252, 255, 252, .86) url(../images/user.png) no-repeat 5px 8px;
+background-size: 14px 13px;
+} 
+.input_panel #password{
+
+background:rgba(252, 255, 252, .86) url(../images/lock.png) no-repeat 6px 7px;
+background-size: 13px 14px;
+}
+::-webkit-input-placeholder {
+color: rgba(30, 24, 30, .8);
+}
+:-moz-placeholder {
+color: rgba(30, 24, 30, .8)!important;
+}
+.placeholder {
+color: rgb(40, 38, 45);
+}
+.input_panel a{
+font: 400 11px/1 helvetica, arial;
+color:rgb(109,43,31);
+text-shadow: 0 0 1px rgba(70, 60, 70, .2);
+margin:2px 8px;
+float: left;
+}
+
+.action_btn .form_btn {
+width:80px;
+display:block;
+font:500 14px/1.28 ColaborateRegular, helvetica, arial;
+padding:5px;
+margin: 8px 13px 0 0;
+border: none;
+color: rgb(248,245,245);
+text-shadow: 1px 0 2px rgba(75, 65,75, .8);
+float: right;
+border-radius:4px;
+}
+/**Action/Search button for login/contact/seach form****/
+.action_btn .form_btn, #searchbox .search_btn {
+background: rgba(108, 65, 49, .93);
+background: -webkit-linear-gradient(top, rgba(120,90,80, .93) 0%,rgba(66,30,40, .97) 100%);
+background: -moz-linear-gradient(top, rgba(120,90,80, .93) 0%,rgba(66,30,40, .97) 100%);
+background: -o-linear-gradient(top, rgba(120,90,80, .93) 0%,rgba(66,30,40, .97) 100%);
+background: -ms-linear-gradient(top, rgba(120,90,80, .93) 0%,rgba(66,30,40, .97) 100%);
+box-shadow:  0 1px 1px rgba(70,45,55, .9), 0 1px 2px rgba(70, 60, 70, .9), 0 0 2px rgba(200, 200, 200, .9);
+}
+.action_btn .form_btn:active, #searchbox .search_btn:active {
+background: rgb(100, 75, 60);
+-webkit-transform: translate(0, 1px);
+-moz-transform: translate(0, 1px);
+-o-transform: translate(0, 1px);
+-ms-transform: translate(0, 1px);
+box-shadow: 0 1px 1px rgba(70, 40, 50, .9), 0 0 2px rgba(200, 200, 200, .9), inset 0 0 7px 3px rgba(80, 70, 80, .8);
+}
+
+.form_footer p{
+font: 200 10px/1 helvetica, arial;
+display: block;
+clear: both;
+float: right;
+color: rgb(40, 40, 48);
+margin: 10px 20px 0 0;
+}
+.form_footer p a  {
+color: rgb(100, 40, 29);
+font-style: italic;
+}
+
+/**==========================================**/
+  /**********************CONTACT FORM*********************/
+/**===========================================**/
+
+#contactform {
+width: 350px;
+float: right;
+padding: 20px 0;
+}
+.input_panel_contact input  {
+padding: 6px 12px 6px 8px;
+width: 200px;
+background: rgb(245, 242, 243);
+background: rgba(252, 255, 252, .86)
+}
+.input_panel_contact label {
+float: left;
+display:block;
+line-height: 2.2;
+color: rgb(25, 30, 30);
+font-family: calibri, tahoma, sans-serif;
+}
+.message_box {
+width: 270px;
+padding-left: 8px;
+overflow: hidden;
+resize: vertical;
+}
+.action_btn .contact_btn_width {
+width:130px;
+float: left;
+margin: 4px 10px;
+}
+.form_footer p em {
+color: red;
+}
+
+/**==========================================**/
+  /**********************SEARCH BOX*********************/
+/**===========================================**/
+#searchbox {
+padding: 6px 12px;
+}
+#searchbox input {
+padding: 5px 10px 5px 25px;
+border-radius: 4px;
+border: 1px solid rgba(190, 180, 190, .2);
+box-shadow: 0 0 0 2px rgba(170, 160, 170, .16);
+color: rgb(25, 30, 30);
+font-family: calibri, tahoma, sans-serif;
+}
+#searchbox input:focus {
+outline: none;
+box-shadow: 0 0 0 2px rgba(120, 120, 120, .3);
+}
+#search_input  {
+background:rgba(252, 255, 252, .8) url(../images/search.png) no-repeat 6px 6px;
+background-size: 13px 14px;
+}
+#searchbox .search_btn {
+display: inline-block;
+font:400 14px/1.3 ColaborateRegular, helvetica, arial;
+color: #f9f9f9;
+vertical-align: 2px;
+padding: 5px 10px;
+width: 36px;
+border: none;
+margin-left: 2px;
+text-shadow: 1px 0 2px rgba(75, 65,75, .8);
+}
+
+

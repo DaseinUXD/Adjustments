@@ -1,0 +1,264 @@
+/**==========================================**/
+	/******DROP DOWN MENU******/
+/**===========================================**/
+#topnav {
+width: 960px;
+margin: 10px;
+}
+ul#menu{
+list-style: none;
+float: left;
+position: relative;
+margin:10px 0; 
+z-index: 99;
+padding: 0;
+border-radius: 10px 10px 2px 2px;
+border: 1px solid rgb(210, 210, 210);
+box-shadow:0 0 0 2px rgba(160, 163, 166, .3), 0 0 3px -4px rgba(140, 134, 139, .9);
+background: rgba(247, 247, 247, .96);
+background-image:   
+-webkit-linear-gradient(top, rgba(252,252,252,.98) 0, rgba(248, 247, 248, .92) 50%, rgba(250,250,250,.9) 100%), /***For Chrome, Safari***/
+-webkit-repeating-linear-gradient(315deg,transparent 4%, rgba(249,249,249, .5) 5%, transparent 8%);  
+background-image:   
+-moz-linear-gradient(top, rgba(253,253,253,.98) 0, rgba(250, 249, 249, .92) 50%, rgba(250,250,250,.9) 100%), /***For Mozilla***/
+-moz-repeating-linear-gradient(315deg,transparent 4%, rgba(249,249,249, .6) 5%, transparent 8%); 
+background-image:   
+-o-linear-gradient(top, rgba(250,250,250,.98) 0, rgba(242, 241, 242, .92) 50%, rgba(247,247,247,.9) 100%); /**For Opera***/
+background-image:   
+-ms-linear-gradient(top, rgba(252,252,252,.98) 0, rgba(248, 247, 248, .92) 50%, rgba(250,250,250,.9) 100%), /***For IE10+***/
+-ms-repeating-linear-gradient(315deg,transparent 4%, rgba(249,249,249, .6) 5%, transparent 8%); 
+}
+
+#menu  li {
+ border-bottom: 1px solid rgb(210, 208, 208);
+ border-right:  1px solid rgb(220, 224, 224);
+position: relative;
+float: left;
+-webkit-transition: all  .1s ease-in;
+-moz-transition: all  .1s ease-in;
+-ms-transition: all  .1s ease-in;
+-o-transition: all  .1s ease-in;
+}
+#menu > li:first-child {
+border-radius: 8px 0 0 0;
+}
+#menu > li:last-child {
+border-radius: 0 8px 0 0;
+border-right:none;
+}
+#menu li a {
+ font: 14px/1.5 ColaborateRegular, calibri, tahoma, sans-serif;
+ text-decoration: none;
+ color:rgb(84,74,84);
+ text-shadow: 0px 0px 2px rgba(184, 184, 184, .4);
+ vertical-align: middle;
+ padding:9px 28px;
+ display:inline-block;
+ position:relative;
+ box-shadow:0px 0 1px rgba(183, 185, 184, .97), 0px 0 1px rgba(209, 215, 212, .3);
+}
+#menu li a img {
+width: 14px;
+position: relative;
+top: 2px;
+}
+.arrow:after {
+content:"";
+position:absolute;
+border-style:solid;
+border-width: 5px;
+}
+.bottom_arrow:after{
+border-color: rgb(118,120, 116) transparent transparent transparent;
+top: 17px; 
+right:13px;
+}
+.right_arrow:after {
+border-color:transparent transparent transparent rgb(118,120, 116);
+top: 11px;
+right: 25px;
+}
+/****Hover and Active state on Main menu****/
+#menu > li:hover {
+background: rgba(247,247,245,.95);
+}
+#menu > li:active {
+background: rgb(242, 244, 243);
+box-shadow: inset 0 0 3px rgb(190,192,193);
+}
+
+/***For Sub and sub-sub menu (common for all nested menu)****/
+.sub,  .abt_col, .sub_sub {
+position:absolute;
+padding: 5px 2px 5px;
+margin: 15px 0 0 1px;
+border-radius: 0 0 5px 5px;
+-webkit-transition: all .4s ease-in-out;
+-moz-transition: all .35s ease-out;
+-ms-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+visibility: hidden;
+z-index: 98;
+opacity:0;
+box-shadow:0 0 2px 1px rgba(130, 133, 136, .38), 0 0 0 -4px rgba(100, 94, 95, .88);
+background:rgba(247, 248, 247, .92);
+background: -webkit-linear-gradient(top, rgba(250,250,250, .92) 0%,rgba(248,248,248, .98) 47%,rgba(242,242,242, .95) 100%); 
+background: -moz-linear-gradient(top, rgba(250,250,250, .92) 0%,rgba(248,248,248, .98) 47%,rgba(242,242,242, .95) 100%); 
+background: -o-linear-gradient(top, rgba(250,250,250, .92) 0%,rgba(248,248,248, .98) 47%,rgba(242,242,242, .95) 100%); 
+background: -ms-linear-gradient(top, rgba(250,250,250, .92) 0%,rgba(248,248,248, .98) 47%,rgba(242,242,242, .95) 100%); 
+ }
+ /***Nested menu inside sub menu****/
+ .sub_sub {
+ left: 132px;
+ top:-35px;
+ margin:-8px 0;
+ z-index: 100;
+ padding: 0 8px 0 0;
+ }
+ 
+ .sub_col1 {
+width: 140px;
+  }
+ .sub_col2 {
+  width: 280px;
+ }
+ #menu .sub ul {
+float: left;
+width: 125px;
+ }
+#menu .sub ul li  {
+ float: left;
+ width: 120px;
+ box-shadow: none;
+ margin: 2px 0 0 6px;
+border: none;
+ }
+#menu .sub ul li + li {
+ border-top: 1px dotted rgb(165, 160, 164);
+ }
+  #menu .sub ul li  a{
+display: block;
+white-space: nowrap;
+box-shadow: none;
+font: 12px/1.4  helvetica, arial;
+width: 82px;
+padding: 8px 38px 8px 15px;
+ }
+
+ /********For About Page column*******/
+  .abt_col {
+ width: 350px;
+ padding: 8px 2px;
+ }
+ .abt_col h3 {
+ font: 300 17px tahoma, sans-serif;
+ text-align: center;
+ margin: 10px 10px 0;
+ color: rgb(100, 105, 109);
+ }
+ .abt_bio {
+ padding: 5px 2px;
+ }
+ .abt_bio p {
+padding: 5px 15px;
+font-family: helvetica;
+ color:rgb(84,74,84);
+font-size: 13px;
+line-height: 1.4;
+ }
+ .abt_bio  p img {
+ width: 72px;
+ margin: 5px;
+ display: inline-block;
+ float: left;
+ }
+ /***For Displaying Submenu****/
+  #menu li:hover > .sub,   #menu li:hover > .abt_col, #menu li:hover > .sub_sub {
+visibility: visible;
+opacity:1;
+margin: 4px 0 5px 1px;
+  }
+/**Hover on submenu element*****/
+ #menu .sub ul li a:hover {
+color: rgb(89,126,227);
+ }
+
+ 
+/**==========================================**/
+  /*********************HORIZONTAL ACCORDION*********************/
+/**===========================================**/
+/* webkit fix */
+#hor-tab ~ :checked {}
+#hor-tab {
+width: 600px;
+margin: 20px;
+}
+#hor-tab input {
+display: none;
+}
+#hor-tab label  {
+background: rgba(250, 249, 251, .88);
+background: -webkit-linear-gradient(top, rgba(252,252,252, .96) 0%, rgba(249, 248, 249, .84) 52%, rgba(239,239,239, .98) 100%);
+background: -moz-linear-gradient(top, rgba(252,252,252, .96) 0%, rgba(249, 248, 249, .84) 52%, rgba(239,239,239, .98) 100%);
+background: -ms-linear-gradient(top, rgba(252,252,252, .96) 0%, rgba(249, 248, 249, .84) 52%, rgba(239,239,239, .98) 100%);
+background: -o-linear-gradient(top, rgba(252,252,252, .96) 0%, rgba(249, 248, 249, .84) 52%, rgba(239,239,239, .98) 100%);
+ font: 15px/1.4 ColaborateRegular, calibri, tahoma, sans-serif;
+    cursor: pointer;
+    display:inline-block; 
+    padding:5px 15px;
+	border: 1px solid rgb(230, 230, 230);
+	border-bottom: none;
+	border-radius: 1px 12px 0 0;
+	color:rgb(70, 66, 68);
+	text-shadow: 0 0 2px rgba(180, 184, 189, .2);
+	box-shadow: 1px 0px 0px rgba(210, 215, 212, .7);
+		-webkit-transition: all .4s cubic-bezier(0.210, 0.420, 0.420, 0.70); 
+		-moz-transition: all .4s cubic-bezier(0.210, 0.420, 0.420, 0.70); 
+		-ms-transition: all .4s cubic-bezier(0.210, 0.420, 0.420, 0.70); 
+		-o-transition: all .4s cubic-bezier(0.210, 0.420, 0.420, 0.70); 
+
+}
+.tab-content {
+opacity:0;
+-webkit-transition: all .5s linear;
+-moz-transition: all .5s linear;
+-ms-transition: all .5s linear;
+-o-transition: all .5s linear;
+height: 0;
+}
+#hor-tab .tab-content article {
+font: 12px/1.9 helvetica, arial;
+color: rgb(65, 72, 66);
+position:relative;
+display: none;
+background: rgba(248, 248, 248 ,.8);
+opacity: .98;
+background:-webkit-linear-gradient(top, rgba(244,246,244,.74) 0%,rgba(249,249,248,.7) 48%,rgba(250,250,250,.8) 100%); /***For Chrome, Safari***/
+background:-moz-linear-gradient(top, rgba(244,246,244,.74) 0%,rgba(249,249,248,.77) 48%,rgba(250,250,250,.87) 100%); /***For Mozilla***/
+background:-ms-linear-gradient(top, rgba(244,246,244,.74) 0%,rgba(249,249,248,.77) 48%,rgba(250,250,250,.87) 100%); /***For IE10+***/
+background:-o-linear-gradient(top, rgba(244,246,244,.74) 0%,rgba(249,249,248,.77) 48%,rgba(250,250,250,.87) 100%); /***For Opera***/
+padding: 22px;
+box-shadow:
+        0 1px 1px rgba(0,0,0,0.15), 
+        0 5px 0 -2px #eee, 
+        0 8px 1px -4px rgba(0,0,0,0.15),
+		0 10px 3px -6px rgba(10, 10, 10, .12);
+border: 2px solid rgba(230, 230, 230, .2); 
+border-top:none;
+}
+
+#hor-tab .tab-content article ul li a {
+font-weight: bold;	
+color: rgb(72, 69, 72);
+}
+#hor-tab :checked + * + * + label {
+background: rgba(247, 248, 248, .86);
+}
+/********* Add + * + for more tabs ***********/
+#hor-tab :checked + * + * + * + * + * +.tab-content article {
+display: block;
+}
+#hor-tab :checked + * + * + * + * + * +.tab-content {
+opacity:1;
+height:100%;
+}
